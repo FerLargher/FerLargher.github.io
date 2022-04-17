@@ -37,8 +37,26 @@ nav ul li{
     margin-left: 75px;
     padding: 25px 0;
     float: left;
+    position: relative;
 }
 
 nav ul li a{
-    
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+nav ul li a::before{
+    display: block;
+    content: '';
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top: 0px;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
 }
