@@ -10,11 +10,18 @@ header{
     background-color: #fff;
 }
 
+header a img{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
 header a{
     display: inline-block;
     padding-left: 20px;
     padding-top: 20px;
 }
+
+
 
 header h1{
     display: inline-block;
@@ -41,14 +48,19 @@ header nav ul li{
     display: inline-block;
 }
 
+header nav ul{
+    background-color: #E8630A;
+    height: 50px;
+}
+
 header nav ul li a{
-    color: #E8630A;
+    /*color: #E8630A;*/
+    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-family: estiloJapo;
     font-size: 20px;
-    padding: 10px 100px 10px 100px;
-    box-shadow: 0 8px 8px 0 rgba(255, 0, 0, 0.15);
+    padding: 15px 100px 10px 100px;
 }
 
 header nav ul li:hover{
@@ -86,7 +98,7 @@ header nav ul li a:hover{
 .masVendidos h2{
     font-size: 50px;
     text-align: center;
-    padding: 20px 0 20px 0;
+    padding: 50px 0 20px 0;
     font-family: estiloJapo;
     color: #E8630A;
     text-shadow: 1px 1px 0.05em #333;
@@ -115,23 +127,35 @@ header nav ul li a:hover{
     transform: translateY(-10px);
 }
 
-.masVendidos article input{
+.masVendidos article h3{
+    padding: 10px 0 0 0px;
+    font-size: 15px;
+    font-family: 'Comic Neue';
+}
+
+.botonComprar {
     background-color: #E8630A;
     border: 1px solid;
     border-radius: 3px;
-   
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    margin-top: 5px;
 }
 
-section article img{
-    border: 10px;
+.botonComprar:hover{
+    background-color: #ab4a0a;
+    border: 1px solid;
+    border-radius: 3px;
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
 }
-
 
 /**     LANZAMIENTOS RECIENTES      **/
 .lanzamientosRecientes h2{
     font-size: 50px;
     text-align: center;
-    padding: 20px 0 20px 0;
+    padding: 100px 0 20px 0;
     font-family: estiloJapo;
     color: #E8630A;
     text-shadow: 1px 1px 0.05em #333
@@ -139,6 +163,7 @@ section article img{
 
 .lanzamientosRecientes{
     background-color: #fff;
+    padding-bottom: 50px;
 }
 
 .lanzamientosRecientes article{
@@ -161,6 +186,14 @@ section article img{
     -webkit-transform: translateY(-8px);
     transform: translateY(-10px);
 }
+
+.lanzamientosRecientes article h3{
+    padding: 10px 0 0 0px;
+    font-size: 15px;
+    font-family: 'Comic Neue';
+}
+
+
 /**     FOOTER      **/
 footer{
     background-color: orange;
@@ -171,6 +204,13 @@ footer .redesSociales{
     padding-left: 170px;
     padding-right: 170px;
     text-align: center;
+    font-family: 'Comic Neue';
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer .redesSociales article h3{
+    padding: 6px;
 }
 
 footer .mediosDePago{
@@ -178,6 +218,11 @@ footer .mediosDePago{
     padding-left: 170px;
     padding-right: 170px;
     text-align: center;
+    font-family: 'Comic Neue';
+}
+
+footer .mediosDePago article h3{
+    padding: 6px;
 }
 
 footer .direccion{
@@ -185,6 +230,15 @@ footer .direccion{
     padding-left: 170px;
     padding-right: 170px;
     text-align: center;
+    font-family: 'Comic Neue';
+}
+
+footer .direccion article h3{
+    padding: 6px;
+}
+
+footer .direccion article h4{
+    display: inline-block;
 }
 
 footer .derechos{
@@ -192,4 +246,6 @@ footer .derechos{
     background-color: #E8630A;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family: 'Comic Neue';
 }
+
