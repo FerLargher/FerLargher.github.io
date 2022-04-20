@@ -1,0 +1,158 @@
+/*********  FUENTE   *********/
+@font-face {
+    font-family: estiloJapo;
+    src: url(../fuentes/HIROMISAKE.ttf);
+}
+
+
+/********* HEADER *********/
+header{
+    background-color: orange;
+}
+
+header a{
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+header h1{
+    display: inline-block;
+    font-size: 80px;
+    font-family: estiloJapo;
+    color: #E8630A;
+    padding-left: 150px;
+    margin-bottom: 20px;
+    text-shadow: black 5px 1px 0.05em;
+}
+
+header h2{
+    display: inline-block;
+    font-size: 40px;
+    color: #E8630A;
+    font-style: italic;
+    font-family: 'Square Peg', cursive;
+    padding-left: 15px;
+    text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    color: #E8630A;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: estiloJapo;
+    font-size: 20px;
+    padding: 10px 70px 10px 70px;
+    box-shadow: 0 8px 8px 0 rgba(255, 0, 0, 0.15);
+}
+
+header nav ul li:hover{
+    background-color: #E8630A;
+}
+
+header nav ul li a:hover{
+    color: orange;
+}
+
+/**     BANNER      **/
+.banner{
+    background-image: url(../img/demon.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    height: 400px;
+}
+
+/**     BUSCADOR    **/
+.buscador{
+    background-color: #E8630A;
+    height: 50px;
+}
+
+.buscador div{
+    padding-left: 850px;
+    padding-top: 15px;
+}
+
+/**     MAS VENDIDOS    **/
+.masVendidos{
+    background-color: #FCD900;
+}
+
+.masVendidos h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-family: estiloJapo;
+    color: #E8630A;
+    text-shadow: 1px 1px 0.05em #333;
+    
+    /*background-color: #333;*/
+}
+
+.masVendidos article{
+    display: inline-block;
+    margin: 10px 100px 10px 100px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 14px 30px 10px 30px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.masVendidos article img{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.masVendidos article img:hover{
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-10px);
+}
+
+section article img{
+    border: 10px;
+}
+
+
+/**     LANZAMIENTOS RECIENTES      **/
+.lanzamientosRecientes h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-family: estiloJapo;
+    color: #E8630A;
+    text-shadow: 1px 1px 0.05em #333
+}
+
+.lanzamientosRecientes{
+    background-color: #FCD900;
+}
+
+.lanzamientosRecientes article{
+    display: inline-block;
+    margin: 10px 100px 10px 100px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 14px 30px 10px 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.lanzamientosRecientes article img{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.lanzamientosRecientes article img:hover{
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-10px);
+}
+/**     FOOTER      **/
+footer{
+    background-color: orange;
+}

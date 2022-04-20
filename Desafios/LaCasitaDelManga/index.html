@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
         <title>La casita del manga</title>
     </head>
     <body>
@@ -13,7 +14,8 @@
         <!--    Seccion del header    -->
 
         <header>
-            <img src="./img/logo_lacasita.png" alt="logo" width="100" height="100">
+            <a href="./index.html"><img src="./img/logo_lacasita.png" alt="logo" width="150" height="120"></a>
+            
             <h1>La casita del manga</h1>
             <h2>Manga store</h2>
             <nav>
@@ -28,71 +30,79 @@
         </header>
 
         <!--    Seccion del banner    -->
+        <section>
+            <!--
+                <img src="./img/demon.jpg" alt="demon"">
+                
+            -->
+            <div class="banner">
 
-        <figure>
-            <img src="./img/demon.jpg" alt="demon" width="800" height="400">
-        </figure>
+            </div>
+        </section>
 
         <!--    Seccion del buscador    -->
         
-        <section>
-            <input type="search" name="busquedaMangas" placeholder="Buscar mangas...">
-            <input type="submit" value="Buscar">
+        <section class="buscador">
+            <div>
+                <input type="search" name="busquedaMangas" placeholder="Buscar mangas...">
+                <input type="submit" value="Buscar">
+
+            </div>
         </section>
 
         <!--    Seccion mas vendidos        -->
 
-        <section>
+        <section class="masVendidos">
             <h2>Mas vendidos</h2>
             <article>
                 <img src="./img/demon01.jpg" alt="caratulaDemon01">
-                <h3>Demon slayer 01</h3>
-                <p>$900</p>
+                <h3>Demon slayer #01</h3>
+                <h3>$900</h3>
                 <input type="button" value="Comprar">
             </article>
             <article>
                 <img src="./img/komi02.jpg" alt="caratulaKomi02" width="143" height="216">
-                <h3>Komi San</h3>
+                <h3>Komi San #02</h3>
                 <p>$750</p>
                 <input type="button" value="Comprar"></article>
             <article>
                 <img src="./img/super15.jpg" alt="caratulaDBSuper15" width="143" height="216">
-                <h3>Dragon Ball Super 15</h3>
+                <h3>Dragon Ball Super #15</h3>
                 <p>$690</p>
                 <input type="button" value="Comprar">
             </article>
             <article>
                 <img src="./img/tsubasa5.jpg" alt="caratulaTsubasa05" width="143" height="216">
-                <h3>Captain Tsubasa 05</h3>
+                <h3>Captain Tsubasa #05</h3>
                 <p>$1200</p>
                 <input type="button" value="Comprar">
             </article>
         </section>
 
         <!--    Seccion lanzamientos recientes       -->
-        <section>
+        <section class="lanzamientosRecientes">
             <h2>Lanzamientos Recientes</h2>
             <article>
                 <img src="./img/slamdunk09_chica.jpg" alt="caratulaSlamDunk09" width="143" height="216">
-                <h3>Slam Dunk 09</h3>
+                <h3>Slam Dunk #09</h3>
                 <p>$1200</p>
                 <input type="button" value="Comprar">
             </article>
             <article>
                 <img src="./img/haikyu09_chica.jpg" alt="caratulaHaikyu09" width="143" height="216">
-                <h3>Haykyu!! 09</h3>
+                <h3>Haykyu!! #09</h3>
                 <p>$600</p>
                 <input type="button" value="Comprar">
             </article>
             <article>
                 <img src="./img/jujustsu17.jpg" alt="caratulaJujutsuKaisen17" width="143" height="216">
-                <h3>Jujutsu Kaisen 17</h3>
+                <h3>Jujutsu Kaisen #17</h3>
                 <p>$1350</p>
                 <input type="button" value="Comprar">
             </article>
             <article>
                 <img src="./img/naruto31.jpg" alt="caratulaNaruto31" width="143" height="216">
-                <h3>Naruto 31</h3>
+                <h3>Naruto #31</h3>
                 <p>$750</p>
                 <input type="button" value="Comprar">
             </article>
@@ -121,5 +131,6 @@
             <article>
                 <p>La casita del comic®. Todos los derechos reservados.</p>
             </article>
+        </footer>
     </body>
 </html>

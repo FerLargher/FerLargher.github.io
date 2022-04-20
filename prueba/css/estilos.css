@@ -12,8 +12,6 @@ body{
 header{
     background: #03a9f4;
     width: 100%;
-    clear: both;
-    content: '';
     display: table;
 }
 
