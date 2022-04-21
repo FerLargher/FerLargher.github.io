@@ -6,65 +6,49 @@
 
 
 /********* HEADER *********/
-header{
-    background-color: #fff;
+.encabezado{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 5%;
 }
 
-header a img{
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
-header a{
-    display: inline-block;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
-
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 header h1{
-    display: inline-block;
     font-size: 80px;
     font-family: estiloJapo;
     color: #E8630A;
-    padding-left: 150px;
-    margin-bottom: 20px;
     text-shadow: black 5px 1px 0.05em;
-    text-align:center;
 }
 
 header h2{
-    display: inline-block;
     font-size: 40px;
     color: #E8630A;
     font-style: italic;
     font-family: 'Square Peg', cursive;
-    padding-left: 15px;
     text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black;
 }
 
-header nav ul li{
-    display: inline-block;
-}
-
 header nav ul{
-    background-color: #E8630A;
+    background-color: #e8630a;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23b8500a' fill-opacity='0.32' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     height: 50px;
+    
 }
 
 header nav ul li a{
-    /*color: #E8630A;*/
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-family: estiloJapo;
     font-size: 20px;
     padding: 15px 100px 10px 100px;
-}
-
-header nav ul li:hover{
-    background-color: #E8630A;
+    text-align: center;
 }
 
 header nav ul li a:hover{
