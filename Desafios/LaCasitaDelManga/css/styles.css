@@ -11,6 +11,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 20px 5%;
+    background-color: white;
 }
 
 .navbar ul {
@@ -18,6 +19,11 @@
     justify-content: center;
     align-items: center;
   }
+
+.titulo{
+    display: flex;
+    align-items: baseline;
+}
 
 header h1{
     font-size: 80px;
@@ -32,13 +38,13 @@ header h2{
     font-style: italic;
     font-family: 'Square Peg', cursive;
     text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black;
+    padding-left: 10px;
 }
 
 header nav ul{
     background-color: #e8630a;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23b8500a' fill-opacity='0.32' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     height: 50px;
-    
 }
 
 header nav ul li a{
@@ -47,7 +53,7 @@ header nav ul li a{
     text-transform: uppercase;
     font-family: estiloJapo;
     font-size: 20px;
-    padding: 15px 100px 10px 100px;
+    padding: 15px 70px 10px 70px;
     text-align: center;
 }
 
@@ -65,33 +71,54 @@ header nav ul li a:hover{
 
 /**     BUSCADOR    **/
 .buscador{
-    background-color: #E8630A;
+    background-color: #e8630a;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23b8500a' fill-opacity='0.32' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.buscador div{
-    padding-left: 850px;
-    padding-top: 15px;
+
+
+.barraBusqueda{
+    padding: 8px 10px;
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid #6d3007;
+    outline: none;
+}
+
+.botonBuscar{
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid #6d3007;
+    margin-left: 10px;
 }
 
 /**     MAS VENDIDOS    **/
 .masVendidos{
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articulos{
+    display: flex;
+    justify-content: center;
 }
 
 .masVendidos h2{
     font-size: 50px;
-    text-align: center;
-    padding: 50px 0 20px 0;
+    padding: 30px 0 20px 0;
     font-family: estiloJapo;
     color: #E8630A;
     text-shadow: 1px 1px 0.05em #333;
-    
-    /*background-color: #333;*/
 }
 
 .masVendidos article{
-    display: inline-block;
     margin: 10px 100px 10px 100px;
     border: 0.5px solid black;
     border-radius: 5px;
@@ -136,10 +163,11 @@ header nav ul li a:hover{
 }
 
 /**     LANZAMIENTOS RECIENTES      **/
+
+
 .lanzamientosRecientes h2{
     font-size: 50px;
-    text-align: center;
-    padding: 100px 0 20px 0;
+    padding: 30px 0 20px 0;
     font-family: estiloJapo;
     color: #E8630A;
     text-shadow: 1px 1px 0.05em #333
@@ -147,11 +175,13 @@ header nav ul li a:hover{
 
 .lanzamientosRecientes{
     background-color: #fff;
-    padding-bottom: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .lanzamientosRecientes article{
-    display: inline-block;
     margin: 10px 100px 10px 100px;
     border: 0.5px solid black;
     border-radius: 5px;
@@ -181,12 +211,17 @@ header nav ul li a:hover{
 /**     FOOTER      **/
 footer{
     background-color: orange;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.info{
+    display: flex;
+    justify-content:center;
 }
 
 footer .redesSociales{
-    display: inline-block;
-    padding-left: 170px;
-    padding-right: 170px;
     text-align: center;
     font-family: 'Comic Neue';
     padding-top: 10px;
@@ -198,11 +233,10 @@ footer .redesSociales article h3{
 }
 
 footer .mediosDePago{
-    display: inline-block;
-    padding-left: 170px;
-    padding-right: 170px;
     text-align: center;
     font-family: 'Comic Neue';
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 footer .mediosDePago article h3{
@@ -210,19 +244,18 @@ footer .mediosDePago article h3{
 }
 
 footer .direccion{
-    display: inline-block;
-    padding-left: 170px;
-    padding-right: 170px;
     text-align: center;
     font-family: 'Comic Neue';
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.direccion article h4{
+    display: inline;
 }
 
 footer .direccion article h3{
     padding: 6px;
-}
-
-footer .direccion article h4{
-    display: inline-block;
 }
 
 footer .derechos{
@@ -233,3 +266,56 @@ footer .derechos{
     font-family: 'Comic Neue';
 }
 
+.seccionesDeFooter{
+    padding: 0 100px 0 100px;
+}
+
+/*****          FORM DE CONTACTO            ****/
+.sectionForm{
+    height: 604px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/rengoku.png);
+    background-size: 2000px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.cuadroFormulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    background-size: cover;
+    padding: 40px;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    
+}
+
+.cuadroFormulario textarea{
+    padding-bottom: 100px;
+}
+
+.cuadrosDeInformacion{
+    padding-bottom: 5px 0 5px 0;
+    padding: 10px;
+    margin-bottom: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Comic Neue';
+    resize: none;
+}
+
+.botonEnviar{
+    width: 100%;
+    background-color: #E8630A;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
