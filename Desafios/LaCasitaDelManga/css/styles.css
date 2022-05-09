@@ -15,7 +15,6 @@ header{
     background-color: #FEFBE7;
 }
 
-
 .titulo-grid{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -67,7 +66,8 @@ header nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
     font-family: estiloJapo;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
+    font-weight: 500;
     transition-duration: 0.4s;
 }
 
@@ -160,7 +160,7 @@ header nav ul li a:hover{
 
 .subtitulo{
     grid-area: subtitulo;
-    font-size: 5vw;
+    font-size: 4vw;
     font-family: estiloJapo;
     color: #E8630A;
     text-shadow: 1px 1px 0.05em #333;
@@ -290,13 +290,6 @@ header nav ul li a:hover{
     padding-bottom: 20px;
 }
 
-.lanzamientosRecientes h2{
-    font-size: 5vw;
-    font-family: estiloJapo;
-    color: #E8630A;
-    text-shadow: 1px 1px 0.05em #333
-}
-
 /*
 .lanzamientosRecientes article{
     border-radius: 5px;
@@ -333,7 +326,7 @@ footer{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23b8500a' fill-opacity='0.32' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     font-family: estiloJapo;
-    font-size: 2vh;
+    font-size: 1.5vw;
     color: #fff;
     text-shadow: 1 1 0px black;
 }
@@ -358,7 +351,7 @@ footer{
 .subtitulosFooter{
     padding-bottom: 10px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .mediosDePago{
@@ -382,7 +375,6 @@ footer{
 
 .imagenesFooter{
     width: 35px;
-    height: 35px;
     border-radius: 50%;
     transition-duration: 0.3s;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -599,6 +591,102 @@ footer{
     justify-content: center;
     row-gap: 5px;
 }
+/*****      MANGAS      *****/
+
+.mangas-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "manga01 manga02 manga03 manga04"
+    "manga05 manga06 manga07 manga08"
+    "manga09 manga10 manga11 manga12"
+    "manga13 manga14 manga15 manga16";
+    margin: 2vw;
+    justify-content: center;
+    justify-items: center;
+}
+
+.mangas-grid article{
+    border-radius: 10px;
+    text-align: center;
+    width: 70%;
+    height: 80%;
+    overflow: hidden;
+    font-family: 'Comic Neue';
+    font-size: 1vw;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition-duration: 0.3s;
+}
+
+.mangas-grid article:hover .recuadroVenta{
+    transform: translateY(-100%);
+}
+
+.manga01{
+    grid-area: manga01;
+}
+
+.manga02{
+    grid-area: manga02;
+}
+
+.manga03{
+    grid-area: manga03;
+}
+
+.manga04{
+    grid-area: manga04;
+}
+
+.manga05{
+    grid-area: manga05;
+}
+
+.manga06{
+    grid-area: manga06;
+}
+
+.manga07{
+    grid-area: manga07;
+}
+
+.manga08{
+    grid-area: manga08;
+}
+
+.manga09{
+    grid-area: manga09;
+}
+
+.manga10{
+    grid-area: manga10;
+}
+
+.manga11{
+    grid-area: manga11;
+}
+
+.manga12{
+    grid-area: manga12;
+}
+
+.manga13{
+    grid-area: manga13;
+}
+
+.manga14{
+    grid-area: manga14;
+}
+
+.manga15{
+    grid-area: manga15;
+}
+
+.manga16{
+    grid-area: manga16;
+}
 
 /*****      RESPONSIVE      *****/
 
@@ -740,6 +828,23 @@ footer{
         width: 25%;
         height: 25%;
     }
+
+    /* mangas */
+    .mangas-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "manga01 manga02 manga03"
+        "manga04 manga05 manga06"
+        "manga07 manga08 manga09"
+        "manga10 manga11 manga12"
+        "manga13 manga14 manga15"
+        "manga16 . .";
+        margin: 2vw;
+        justify-content: center;
+        justify-items: center;
+    }
 }
 
 /* Celulares en horizontal o tablets en vertical*/
@@ -872,6 +977,24 @@ footer{
     .derechos{
         font-size: 4vw;
         text-align: center;
+    }
+     /* mangas */
+     .mangas-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "manga01 manga02" 
+        "manga03 manga04" 
+        "manga05 manga06"
+        "manga07 manga08" 
+        "manga09 manga10"
+        "manga11 manga12"
+        "manga13 manga14" 
+        "manga15 manga16";
+        margin: 2vw;
+        justify-content: center;
+        justify-items: center;
     }
 }
 
@@ -1018,6 +1141,32 @@ footer{
         font-size: 4vw;
         text-align: center;
     }
-    
+    /* mangas */
+    .mangas-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(16, 1fr);
+        grid-template-areas: 
+        "manga01"
+        "manga02" 
+        "manga03"
+        "manga04" 
+        "manga05"
+        "manga06"
+        "manga07"
+        "manga08" 
+        "manga09"
+        "manga10"
+        "manga11"
+        "manga12"
+        "manga13"
+        "manga14" 
+        "manga15"
+        "manga16";
+        margin: 2vw;
+        justify-content: center;
+        justify-items: center;
+    }
+
 }
 
