@@ -270,7 +270,7 @@ header nav ul li a:hover{
 }
 
 .articulo08:hover .recuadroVenta{
-    transform: translateY(-100px);
+    transform: translateY(-100%);
 }
 
 /**     LANZAMIENTOS RECIENTES      **/
@@ -389,11 +389,11 @@ footer{
 /*****          FORM DE CONTACTO            ****/
 
 .sectionForm{
-    height: 67vh;
     display: flex;
+    height:25vw;
+    gap: 1vw;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     background-image: url(../img/rengoku.png);
     background-position: center;
     background-size: cover;
@@ -404,23 +404,29 @@ footer{
 .cuadroFormulario{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 30%;
-    border-radius: 5px;
+    height: 60%;
+    border-radius: 10px;
 }
 
-.cuadroFormulario textarea{
-    padding-bottom: 30%;
+.mapa{
+    width: 30%;
+    height: 60%;
+    border-radius: 10px;
 }
+
 
 .cuadrosDeInformacion{
-    padding: 10px;
-    margin-bottom: 5px;
+    padding: 0.7vw;
+    margin-bottom: 0.5vw;
     outline: none;
     border: none;
     border-radius: 5px;
     font-family: 'Comic Neue';
     resize: none;
+}
+.cuadroFormulario textarea{
+    padding-bottom: 4vw;
 }
 
 .botonEnviar{
@@ -428,10 +434,10 @@ footer{
     background-color: #E8630A;
     border: none;
     border-radius: 5px;
-    padding: 12px;
     color: white;
-    margin: 16px 0;
-    font-size: 16px;
+    font-family: 'Comic Neue';
+    padding: 0.7vw 0;
+    font-size: 1vw;
 }
 
 .botonEnviar:hover{
@@ -439,25 +445,21 @@ footer{
     color: orange;
 }
 
-.mapa{
-    border-radius: 10px;
-}
-
 /*****      SOBRE NOSOTROS      *****/
 
 .nosotros{
     background-image: url(../img/fondo-goku.jpg);
     background-position: center;
-    height: 67vh;
+    height: 40vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .nosotros p{
-    padding: 0 100px;
+    padding: 0 10%;
     font-family: estiloJapo;
-    font-size: 20px;
+    font-size: 2vw;
     color: white;
     text-shadow: 1px 1px 2px black;
 }
@@ -578,13 +580,18 @@ footer{
 .aside-mercha h3{
     font-weight: 500;
     font-size: 1.5vw;
+    text-align: center;
+}
+
+.aside-mercha a{
+    font-size: 1vw;
 }
 
 .aside-mercha ul{
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     width: 90%;
-    height: 20%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -845,8 +852,67 @@ footer{
         justify-content: center;
         justify-items: center;
     }
-}
 
+    /* contacto */
+    .cuadroFormulario{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 80%;
+        border-radius: 10px;
+    }
+    
+    .mapa{
+        width: 30%;
+        height: 80%;
+        border-radius: 10px;
+    }
+    .botonEnviar{
+        font-size: 1.3vw;
+    }
+    /* merchandising */
+    .mercha-grid{
+        display: grid;
+        grid-template-columns: 0.7fr 1fr 1fr 1fr;
+        grid-template-rows:  0.1fr 0.7fr 0.7fr 0.7fr;
+        grid-template-areas:
+        "buscador buscador buscador buscador"
+        "aside art09 art10 art11"
+        "aside art12 art13 art14"
+        ".  art15 art16 .";
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
+        padding: 2em 2em;
+        background-color: #FEFBE7;
+    }
+    .mercha-grid article{
+        width: 100%;
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        transition-duration: 0.3s;
+        overflow: hidden;
+    }
+    
+    .mercha-grid article .recuadroVenta{
+        font-size: 1.4vw;
+        height: 35%;
+    }
+
+    .mercha-grid article .recuadroVenta .botonComprar{
+        font-size: 1.2vw;
+    }
+    
+    .aside-mercha h3{
+        font-weight: 500;
+        font-size: 2vw;
+        text-align: center;
+    }
+    
+    .aside-mercha a{
+        font-size: 1.5vw;
+    }
+}
 /* Celulares en horizontal o tablets en vertical*/
 
 @media (max-width: 767px) {
@@ -996,6 +1062,93 @@ footer{
         justify-content: center;
         justify-items: center;
     }
+
+    /* sobre nosotros*/
+    .nosotros p{
+        padding: 0 10%;
+        font-family: estiloJapo;
+        font-size: 3vw;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+        
+    /* contacto */
+    .sectionForm{
+        height:40vw;
+    }
+    
+    .cuadrosDeInformacion{
+        padding: 2.5vw;
+        margin-bottom: 0.5vw;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Comic Neue';
+        resize: none;
+    }
+    .cuadroFormulario textarea{
+        height: 4vw;
+    }
+    .cuadroFormulario{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 90%;
+        border-radius: 10px;
+        font-size: 4vw;
+    }
+    
+    .mapa{
+        display: none;
+    }
+
+    .botonEnviar{
+        padding: 1.7vw 0;
+        font-size: 3.5vw;
+    }
+    
+    /* merchandising */
+    .mercha-grid{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr;
+        grid-template-rows:  0.1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "buscador buscador buscador"
+        "aside art09 art10"
+        "aside art11 art12"
+        ". art13 art14 "
+        ".   art15 art16";
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
+        padding: 1vw 1vw;
+        background-color: #FEFBE7;
+    }
+    
+    .mercha-grid article .recuadroVenta{
+        font-size: 2.5vw;
+        height: 35%;
+    }
+
+    .mercha-grid article .recuadroVenta .botonComprar{
+        font-size: 2vw;
+        padding: 1vw;
+    }
+
+    .aside-mercha{
+        position: sticky;
+        top: 1vw;
+    }
+    
+    .aside-mercha h3{
+        font-weight: 500;
+        font-size: 3.2vw;
+        text-align: center;
+    }
+    
+    .aside-mercha a{
+        font-size: 2.5vw;
+    }
 }
 
 /* Celulares en vertical */
@@ -1008,6 +1161,11 @@ footer{
         grid-template-rows: 1fr;
         justify-items: center;
         padding: 15px 0;
+    }
+
+    .titulo-grid a{
+        display: flex;
+        justify-content:center;
     }
 
     .titulo h1{
@@ -1168,5 +1326,47 @@ footer{
         justify-items: center;
     }
 
-}
+    /* merchandising */
+    .mercha-grid{
+        display: grid;
+        grid-template-columns: 0.7fr 1fr 1fr;
+        grid-template-rows:  0.1fr repeat(4, 1fr);
+        grid-template-areas:
+        "buscador buscador buscador"
+        "aside art09 art10"
+        "aside art11 art12"
+        ". art13 art14 "
+        ". art15 art16";
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
+        padding: 0.8vw 0.8vw;
+        background-color: #FEFBE7;
+    }
+    
+    .mercha-grid article .recuadroVenta{
+        font-size: 3.5vw;
+        height: 35%;
+    }
 
+    .mercha-grid article .recuadroVenta .botonComprar{
+        font-size: 3vw;
+        padding: 1vw;
+    }
+
+    .aside-mercha{
+        position: sticky;
+        top: 1vw;
+    }
+    
+    .aside-mercha h3{
+        font-weight: 500;
+        font-size: 4vw;
+        text-align: center;
+    }
+    
+    .aside-mercha a{
+        font-size: 3.5vw;
+    }
+
+}
