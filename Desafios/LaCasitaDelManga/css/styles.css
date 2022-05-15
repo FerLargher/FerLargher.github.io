@@ -211,18 +211,8 @@ header nav ul li a:hover{
     cursor: pointer;
 }
 
-.lanzamientosRecientes article{
-    
-    transition-duration: 0.3s;
-}
-
-.lanzamientosRecientes article:hover{
-    transform: translateY(-10px);
-}
-
 .masVendidos article:hover{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
 }
 
 .imagenesArticulos{
@@ -315,9 +305,14 @@ header nav ul li a:hover{
     transition-duration: 0.3s;
 }
 
-.lanzamientosRecientes article:hover{
-    transform: translateY(-10px);
+.lanzamientosRecientes article{
+    transition-duration: 0.3s;
 }
+
+.lanzamientosRecientes article:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
 
 
 /**     FOOTER      **/
