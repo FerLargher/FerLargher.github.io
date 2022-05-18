@@ -54,14 +54,30 @@
 
         <!--    Seccion formulario      -->
         <section class="sectionForm">
-            <div class="cuadroFormulario">
-                <input class="cuadrosDeInformacion" type="text" placeholder="Ingrese su nombre">
-                <input class="cuadrosDeInformacion" type="email" placeholder="ejemplo@mail.com" name="email">
-                <textarea class="cuadrosDeInformacion" placeholder="Ingresá tu mensaje..."></textarea>
-                <button class="botonEnviar">ENVIAR</button>
+            <form class="container">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Ingrese nombre">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Ingrese su email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+    
+                  <div class="form-floating">
+                    <textarea aria-placeholder="Dejá tu comentario acá" class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+                  </div>
+    
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Enviarme ofertas</label>
+                </div>
+                <button type="submit" class="btn btn-danger">Enviar</button>
+              </form>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1644.3234284869884!2d-58.617521927985315!3d-34.48648183746545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1652226810346!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1644.3234284869884!2d-58.617521927985315!3d-34.48648183746545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1652226810346!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+
+        
 
 
         <!--    Footer      -->

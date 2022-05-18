@@ -347,10 +347,14 @@ footer{
 }
 
 /*****          FORM DE CONTACTO            ****/
+.sectionForm form{
+    width: 40%;
+    color: #fff;
+    padding: 1em 0;
+}
 
 .sectionForm{
     display: flex;
-    height:25vw;
     gap: 1vw;
     justify-content: center;
     align-items: center;
@@ -370,8 +374,11 @@ footer{
 }
 
 .mapa{
-    width: 30%;
+    width: 40%;
     height: 60%;
+}
+
+.mapa iframe{
     border-radius: 10px;
 }
 
@@ -410,16 +417,16 @@ footer{
 .nosotros{
     background-image: url(../img/fondo-goku.jpg);
     background-position: center;
-    height: 40vw;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.nosotros p{
-    padding: 0 10%;
+.nosotros div p{
     font-family: estiloJapo;
-    font-size: 2vw;
+    font-size: 2.2em;
+    padding: 1em 0;
     color: white;
     text-shadow: 1px 1px 2px black;
 }
@@ -428,21 +435,17 @@ footer{
 
 .mercha-grid{
     display: grid;
-    grid-template-columns: 0.5fr 0.7fr 0.7fr 0.7fr 0.7fr;
-    grid-template-rows:  0.1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 0.7fr 0.7fr 0.7fr;
+    grid-template-rows:  1fr 1fr 1fr;
     grid-template-areas:
-    "aside buscador buscador buscador buscador"
-    "aside art09 art10 art11 art12"
-    "aside art13 art14 art15 art16";
+    "aside art09 art10 art11"
+    "aside art12 art13 art14"
+    ". art15 art16 .";
     justify-items: center;
     align-items: center;
-    gap: 25px;
-    padding: 2em 12em;
+    padding: 2em 0;
+    gap: 1em;
     background-color: #FEFBE7;
-}
-
-.buscador-mercha{
-    grid-area: buscador;
 }
 
 .aside-mercha{
@@ -501,26 +504,6 @@ footer{
     transform: translateY(-100%);
 }
 
-.buscador-mercha{
-    width: 100%;
-    height: 100%;
-    font-family: 'Comic Neue';
-    font-size: 1vw;
-    transition-duration: 0.3s;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.barraMercha{
-    height: 90%;
-    width: 100%;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    outline: none;
-}
-
 .aside-mercha{
     width: 100%;
     height: 100%;
@@ -539,12 +522,12 @@ footer{
 
 .aside-mercha h3{
     font-weight: 500;
-    font-size: 1.5vw;
+    font-size: 2em;
     text-align: center;
 }
 
 .aside-mercha a{
-    font-size: 1vw;
+    font-size: 1.5em;
 }
 
 .aside-mercha ul{
@@ -770,14 +753,7 @@ footer{
     }
 
     /* contacto */
-    .mapa{
-        width: 50%;
-        height: 50%;
-    }
-    .cuadroFormulario{
-        width: 25%;
-        height: 25%;
-    }
+    
 
     /* mangas */
     .mangas-grid{
@@ -797,19 +773,9 @@ footer{
     }
 
     /* contacto */
-    .cuadroFormulario{
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        height: 80%;
-        border-radius: 10px;
-    }
     
-    .mapa{
-        width: 30%;
-        height: 80%;
-        border-radius: 10px;
-    }
+    
+    
     .botonEnviar{
         font-size: 1.3vw;
     }
@@ -865,9 +831,6 @@ footer{
     }
 
     /* banner */
-    .banner{
-        display: none;
-    }
 
 
     /* mas vendidos*/
@@ -953,39 +916,7 @@ footer{
     }
         
     /* contacto */
-    .sectionForm{
-        height:40vw;
-    }
     
-    .cuadrosDeInformacion{
-        padding: 2.5vw;
-        margin-bottom: 0.5vw;
-        outline: none;
-        border: none;
-        border-radius: 5px;
-        font-family: 'Comic Neue';
-        resize: none;
-    }
-    .cuadroFormulario textarea{
-        height: 4vw;
-    }
-    .cuadroFormulario{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        height: 90%;
-        border-radius: 10px;
-        font-size: 4vw;
-    }
-    
-    .mapa{
-        display: none;
-    }
-
-    .botonEnviar{
-        padding: 1.7vw 0;
-        font-size: 3.5vw;
-    }
     
     /* merchandising */
     .mercha-grid{
@@ -1034,9 +965,7 @@ footer{
 /* bootrsap media query*/
 
 @media (max-width: 1200px){
-    .titulo-grid{
-        display: none;
-    }
+    
     .masVendidos{
         background-color: #FEFBE7;
         display: grid;
@@ -1138,21 +1067,28 @@ footer{
     }
 }
 
+@media (max-width: 991px){
+    .titulo-grid{
+        display: none;
+    }
+}
+@media(min-width: 992px){
+    .navbar-brand{
+        display: none;
+    }
+}
+
 /* Celulares en vertical */
 
 @media (max-width: 480px) {
     /* header */
-    .titulo-grid{
-        display: none;
-    }
+
     .navbar li a{
         font-size: 5vw;
     }
     
     /* banner */
-    .banner{
-        display: none;
-    }
+
 
 
     /* mas vendidos*/
@@ -1298,4 +1234,45 @@ footer{
 
 }
 
+@media (max-width: 1200px){
+    .mercha-grid{
+        display: grid;
+        grid-template-columns: 0.5fr 0.7fr 0.7fr;
+        grid-template-rows:  1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "aside art09 art10"
+        "aside art11 art12"
+        ". art13 art14"
+        ". art15 art16";
+    }
+    .mapa{
+        display: none;
+    }
 
+    .sectionForm form{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 992px){
+    .mercha-grid{
+        display: grid;
+        grid-template-columns: 0.5fr 0.7fr;
+        grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "aside art09"
+        "aside art10"
+        ". art11"
+        ". art12"
+        ". art13"
+        ". art14"
+        ". art15"
+        ". art16";
+    }
+    .aside-mercha{
+        position: sticky;
+        top: 1vw;
+    }
+}

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,8 +56,12 @@
         
     <section class="buscador">
             
-        <input class="barraBusqueda" type="search" name="busquedaMangas" placeholder="Buscar mangas...">
-        <input class ="botonBuscar" type="submit" value="Buscar">
+        <div class="container">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar mangas..." aria-label="Buscar">
+                <button class="btn btn-danger" type="submit">Buscar</button>
+            </form>
+        </div>
         
     </section>
 
