@@ -3,11 +3,8 @@
     font-family: estiloJapo;
     src: url(../fuentes/HIROMISAKE.ttf);
 }
-
-
-.container{
-    max-width: 1200px;
-    margin: auto;
+body{
+    background-color: #FEFBE7;
 }
 
 /********* HEADER *********/
@@ -17,7 +14,7 @@ header{
 
 .titulo-grid{
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 0.5fr 3fr;
     grid-template-rows: 1fr;
     align-items: center;
     padding: 10px 0;
@@ -34,26 +31,15 @@ header{
     justify-content: center;
 }
 
-.navbar{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    background-color: #e8630a;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23b8500a' fill-opacity='0.32' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-    height: 3vw;
-    align-items: center;
-    justify-items: center;
-}
-
 header h1{
-    font-size: 4vw;
+    font-size: 5em;
     font-family: estiloJapo;
     color: #E8630A;
     text-shadow: black 5px 1px 0.05em;
 }
 
 header h2{
-    font-size: 2.5vw;
+    font-size: 3em;
     color: #E8630A;
     font-style: italic;
     font-family: 'Square Peg', cursive;
@@ -61,35 +47,54 @@ header h2{
     padding-left: 20px;
 }
 
-header nav ul li a{
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: estiloJapo;
-    font-size: 1.5vw;
-    font-weight: 500;
-    transition-duration: 0.4s;
-}
-
-header nav ul li a:hover{
-    color: orange;
-    transition-duration: 0.4s;
-}
-
 .logo{
-    width: 50%;
+    width: 300px;
 }
 
-.colapsable{
-    display: none;
+.navbar{
+    background-color: #E8630A;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23b8500a' fill-opacity='0.32' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
 }
+
+.navbar-nav{
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.nav-link{
+    font-family: estiloJapo;
+    color: #fff;
+    font-size: 1.3vw;
+    padding-top: 1vw;
+}
+
+.nav-link:hover{
+    color: orange;
+}
+
+@media (min-width: 992px) and (max-width: 1399px){
+    .titulo-grid{
+        display: grid;
+        grid-template-columns: 0.1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        padding: 10px 0;
+    }
+    header h1{
+        font-size: 4.5em;
+    }
+    
+    header h2{
+        font-size: 2.3em;
+    }
+}
+
+
 
 /**     BANNER      **/
 .banner{
-    background-image: url(../img/rengoku.png);
-    background-attachment: fixed;
-    background-position: center;
-    height: 25vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 /**     BUSCADOR    **/
@@ -97,31 +102,16 @@ header nav ul li a:hover{
     background-color: #e8630a;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23b8500a' fill-opacity='0.32' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
-    height: 3vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.barraBusqueda{
-    padding: 8px 10px;
-    width: 50%;
-    border-radius: 10px;
-    border: none;
-    outline: none;
+.d-flex{
+    padding: 1vw 0;
 }
 
-.botonBuscar{
-    padding: 8px 10px;
-    border-radius: 10px;
-    border: none;
-    margin-left: 10px;
+.btn-danger{
+    font-family: 'Comic Neue';
     background: orange;
     color: white;
-}
-
-.botonBuscar:hover{
-    cursor: pointer;
 }
 
 /**     MAS VENDIDOS    **/
@@ -160,19 +150,20 @@ header nav ul li a:hover{
 
 .subtitulo{
     grid-area: subtitulo;
-    font-size: 4vw;
+    font-size: 4em;
     font-family: estiloJapo;
     color: #E8630A;
     text-shadow: 1px 1px 0.05em #333;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .masVendidos{
     background-color: #FEFBE7;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:  0.25fr 1fr 1fr;
+    grid-template-rows:  0.1fr 1fr 1fr;
     grid-template-areas: 
     "subtitulo subtitulo subtitulo subtitulo"
     "art01 art02 art03 art04"
@@ -185,8 +176,8 @@ header nav ul li a:hover{
 .masVendidos article{
     border-radius: 10px;
     text-align: center;
-    width: 70%;
-    height: 80%;
+    width: 90%;
+    height: 85%;
     overflow: hidden;
     font-family: 'Comic Neue';
     font-size: 1vw;
@@ -222,7 +213,7 @@ header nav ul li a:hover{
 
 .recuadroVenta{
     background-color: #fff;
-    height: 25%;
+    height: 30%;
     font-size: 1vw;
     display: flex;
     flex-direction: column;
@@ -231,35 +222,7 @@ header nav ul li a:hover{
     transition: .5s;
 }
 
-.articulo01:hover .recuadroVenta{
-    transform: translateY(-100%);
-}
-
-.articulo02:hover .recuadroVenta{
-    transform: translateY(-100%);
-}
-
-.articulo03:hover .recuadroVenta{
-    transform: translateY(-100%);
-}
-
-.articulo04:hover .recuadroVenta{
-    transform: translateY(-100%);
-}
-
-.articulo05:hover .recuadroVenta{
-    transform: translateY(-100%);
-}
-
-.articulo06:hover .recuadroVenta{
-    transform: translateY(-100%);
-}
-
-.articulo07:hover .recuadroVenta{
-    transform: translateY(-100%);
-}
-
-.articulo08:hover .recuadroVenta{
+.masVendidos article:hover .recuadroVenta{
     transform: translateY(-100%);
 }
 
@@ -280,23 +243,11 @@ header nav ul li a:hover{
     padding-bottom: 20px;
 }
 
-/*
-.lanzamientosRecientes article{
-    border-radius: 5px;
-    text-align: center;
-    width: 50%;
-    height: 80%;
-    overflow: hidden;
-    font-family: 'Comic Neue';
-    background-color: white;
-}*/
-
-
 .lanzamientosRecientes article{
     border-radius: 10px;
     text-align: center;
-    width: 70%;
-    height: 80%;
+    width: 90%;
+    height: 85%;
     overflow: hidden;
     font-family: 'Comic Neue';
     font-size: 1vw;
@@ -313,6 +264,9 @@ header nav ul li a:hover{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+.lanzamientosRecientes article:hover .recuadroVenta{
+    transform: translateY(-100%);
+}
 
 
 /**     FOOTER      **/
@@ -347,6 +301,7 @@ footer{
     padding-bottom: 10px;
     text-align: center;
     font-weight: 500;
+    font-size: 1em;
 }
 
 .mediosDePago{
@@ -369,16 +324,26 @@ footer{
 }
 
 .imagenesFooter{
-    width: 35px;
+    width: 50px;
     border-radius: 50%;
     transition-duration: 0.3s;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.direccion p{
+    font-size: 0.8em;
+    text-align: center;
 }
 
 .imagenesFooter:hover{
     transform: rotate(360deg);
     transition-duration: 0.8s;
     cursor: pointer;
+}
+
+.derechos h6{
+    font-size: 1em;
+    text-align: center;
 }
 
 /*****          FORM DE CONTACTO            ****/
@@ -730,15 +695,7 @@ footer{
 
     /* buscador */
 
-    .buscador{
-        background-color: #e8630a;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23b8500a' fill-opacity='0.32' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        background-attachment: fixed;
-        height: 3.5vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
     
     .barraBusqueda{
         height: 85%;
@@ -748,15 +705,6 @@ footer{
         outline: none;
     }
     
-    .botonBuscar{
-        padding: 0.5vw;
-        height: 85%;
-        border-radius: 10px;
-        font-size: 1.5vw;
-        border: none;
-        background: orange;
-        color: white;
-    }
 
     /*mas vendidos*/
     .masVendidos{
@@ -912,50 +860,15 @@ footer{
 
 @media (max-width: 767px) {
     /* header */
-    .titulo-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        align-items: flex-end;
-        padding: 15px 0;
-    }
-
-    .titulo{
-        display: flex;
-        flex-direction: column;
-        padding-left: 1em;
-    }
-    .titulo h1{
-        display: none;
-    }
-    .titulo h2{
-        padding: 0;
-        font-size: 8vw;
-    }
     .navbar li a{
         font-size: 3vw;
     }
-
-    .navbar{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        height: auto;
-        align-items: center;
-        justify-items:center;
-        row-gap: 0.5vw;
-        padding-right: 1vw;
-    }
-    
 
     /* banner */
     .banner{
         display: none;
     }
-    /* buscador*/
-    .buscador{
-        height: 10vw;
-    }
+
 
     /* mas vendidos*/
     .masVendidos article{
@@ -1008,37 +921,9 @@ footer{
     }
 
     /* footer */
-    .info{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "redes" 
-        "pago"
-        "direccion"
-        "derechos";
-        justify-items: center;
-        align-items: center;
-        row-gap: 1vw;
-        padding-top: 1vw;
-    }
-    .imagenesFooter{
-        width: 30px;
-        height: 30px;
-    }
+    
 
-    .subtitulosFooter{
-        font-size: 4vw;
-    }
 
-    .seccionesDeFooter p{
-        font-size: 3.5vw;
-    }
-
-    .derechos{
-        font-size: 4vw;
-        text-align: center;
-    }
      /* mangas */
      .mangas-grid{
         display: grid;
@@ -1146,52 +1031,129 @@ footer{
     }
 }
 
+/* bootrsap media query*/
+
+@media (max-width: 1200px){
+    .titulo-grid{
+        display: none;
+    }
+    .masVendidos{
+        background-color: #FEFBE7;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  0.15fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "subtitulo subtitulo"
+        "art01 art02"
+        "art03 art04"
+        "art05 art06" 
+        "art07 art08";
+    }
+    .masVendidos article{
+        width: 90%;
+        height: 85%;
+    }
+
+    .lanzamientosRecientes{
+        background-color: #FEFBE7;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  0.15fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "subtitulo subtitulo"
+        "art01 art02" 
+        "art03 art04" 
+        "art05 art06"
+        "art07 art08";
+    }
+}
+
+@media (max-width: 768px){
+    .info{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+        grid-template-areas: 
+        "redes" 
+        "pago"
+        "direccion"
+        "derechos";
+    }
+    .subtitulosFooter{
+        font-size: 3em;
+    }
+    .seccionesDeFooter p{
+        font-size: 2.45em;
+    }
+    .derechos h6{
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 1399px) and (min-width: 768px){
+    footer{
+        font-size: 1.5vw;
+    }
+    
+    .info{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 4fr 0.5fr;
+        grid-template-areas: 
+        "redes pago direccion"
+        "derechos derechos derechos";
+    }
+    
+    .subtitulosFooter{
+        font-size: 1.5em;
+    }
+    
+    .seccionesDeFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imagenesFooter{
+        width: 35px;
+        border-radius: 50%;
+        transition-duration: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+    
+    .direccion p{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    
+    .imagenesFooter:hover{
+        transform: rotate(360deg);
+        transition-duration: 0.8s;
+        cursor: pointer;
+    }
+    
+    .derechos h6{
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
 /* Celulares en vertical */
 
 @media (max-width: 480px) {
     /* header */
     .titulo-grid{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        justify-items: center;
-        padding: 15px 0;
-    }
-
-    .titulo-grid a{
-        display: flex;
-        justify-content:center;
-    }
-
-    .titulo h1{
-        display: none;
-    }
-    .titulo h2{
         display: none;
     }
     .navbar li a{
         font-size: 5vw;
-    }
-
-    .navbar{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        height: auto;
-        align-items: center;
-        justify-items:center;
-        row-gap: 0.5vw;
-        padding-right: 1vw;
     }
     
     /* banner */
     .banner{
         display: none;
     }
-    /* buscador*/
-    .buscador{
-        height: 8vw;
-    }
+
 
     /* mas vendidos*/
     .masVendidos article{
@@ -1263,37 +1225,7 @@ footer{
 
     /* footer */
 
-    .info{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "redes" 
-        "pago"
-        "direccion"
-        "derechos";
-        justify-items: center;
-        align-items: center;
-        row-gap: 1vw;
-        padding-top: 1vw;
-    }
-    .imagenesFooter{
-        width: 30px;
-        height: 30px;
-    }
-
-    .subtitulosFooter{
-        font-size: 4vw;
-    }
-
-    .seccionesDeFooter p{
-        font-size: 3.5vw;
-    }
-
-    .derechos{
-        font-size: 4vw;
-        text-align: center;
-    }
+    
     /* mangas */
     .mangas-grid{
         display: grid;
@@ -1365,3 +1297,5 @@ footer{
     }
 
 }
+
+
