@@ -1,0 +1,93 @@
+.mangas-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "manga01 manga02 manga03 manga04"
+    "manga05 manga06 manga07 manga08"
+    "manga09 manga10 manga11 manga12"
+    "manga13 manga14 manga15 manga16";
+    margin: 2vw;
+    justify-content: center;
+    justify-items: center;
+    article{
+        border-radius: 10px;
+        text-align: center;
+        width: 90%;
+        height: 85%;
+        overflow: hidden;
+        font-family: 'Comic Neue';
+        font-size: 1vw;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        transition-duration: 0.3s;
+        &:hover .recuadroVenta{
+            transform: $aparecer;
+            box-shadow: $sombra-articulo;
+        }
+    }
+}
+
+.manga01{
+    grid-area: manga01;
+}
+
+.manga02{
+    grid-area: manga02;
+}
+
+.manga03{
+    grid-area: manga03;
+}
+
+.manga04{
+    grid-area: manga04;
+}
+
+.manga05{
+    grid-area: manga05;
+}
+
+.manga06{
+    grid-area: manga06;
+}
+
+.manga07{
+    grid-area: manga07;
+}
+
+.manga08{
+    grid-area: manga08;
+}
+
+.manga09{
+    grid-area: manga09;
+}
+
+.manga10{
+    grid-area: manga10;
+}
+
+.manga11{
+    grid-area: manga11;
+}
+
+.manga12{
+    grid-area: manga12;
+}
+
+.manga13{
+    grid-area: manga13;
+}
+
+.manga14{
+    grid-area: manga14;
+}
+
+.manga15{
+    grid-area: manga15;
+}
+
+.manga16{
+    grid-area: manga16;
+}

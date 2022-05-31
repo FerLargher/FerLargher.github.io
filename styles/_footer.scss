@@ -1,0 +1,71 @@
+footer{
+    background-color: $naranja-manga;
+    background-image: $panal;
+    background-attachment: fixed;
+    font-family: estiloJapo;
+    font-size: 1.5vw;
+    color: #fff;
+    text-shadow: 1 1 0px black;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5fr 0.5fr;
+    grid-template-areas: 
+    "redes pago direccion"
+    "derechos derechos derechos";
+    justify-items: center;
+    align-items: center;
+    row-gap: 1vw;
+    .redesSociales{
+        grid-area: redes;
+    }
+}
+
+
+.subtitulosFooter{
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.mediosDePago{
+    grid-area: pago;
+}
+
+.direccion{
+    grid-area: direccion;
+    p{
+        font-size: 0.8em;
+        text-align: center;
+    }
+}
+
+.derechos{
+    grid-area: derechos;
+    h6{
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+.seccionesDeFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.imagenesFooter{
+    width: 50px;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    &:hover{
+        transform: rotate(360deg);
+        transition-duration: 0.8s;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,1162 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: #000;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/*********  FUENTE   *********/
+@font-face {
+  font-family: estiloJapo;
+  src: url(../fuentes/HIROMISAKE.ttf);
+}
+
+body {
+  background-color: #FEFBE7;
+}
+
+/********* HEADER *********/
+header {
+  background-color: #FEFBE7;
+}
+
+.titulo-grid {
+  display: grid;
+  grid-template-columns: 0.5fr 3fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.titulo-grid a {
+  display: flex;
+  justify-content: end;
+}
+
+.titulo {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 5em;
+  font-family: estiloJapo;
+  color: #E8630A;
+  text-shadow: black 5px 1px 0.05em;
+}
+
+header h2 {
+  font-size: 3em;
+  color: #E8630A;
+  font-style: italic;
+  font-family: 'Square Peg', cursive;
+  text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black;
+  padding-left: 20px;
+}
+
+.logo {
+  width: 300px;
+}
+
+.navbar {
+  background-color: #E8630A;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23b8500a' fill-opacity='0.32' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  font-family: estiloJapo;
+  color: #fff;
+  font-size: 1.5em;
+  padding-top: 1vw;
+}
+
+.nav-link:hover {
+  color: orange;
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .titulo-grid {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding: 10px 0;
+  }
+  header h1 {
+    font-size: 4.5em;
+  }
+  header h2 {
+    font-size: 2.3em;
+  }
+}
+
+/**     BANNER      **/
+.banner {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/**     BUSCADOR    **/
+.buscador {
+  background-color: #E8630A;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23b8500a' fill-opacity='0.32' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+}
+
+.d-flex {
+  padding: 1vw 0;
+}
+
+.btn-danger {
+  font-family: 'Comic Neue';
+  background: orange;
+  color: white;
+}
+
+/**     MAS VENDIDOS    **/
+.articulo01 {
+  grid-area: art01;
+}
+
+.articulo02 {
+  grid-area: art02;
+}
+
+.articulo03 {
+  grid-area: art03;
+}
+
+.articulo04 {
+  grid-area: art04;
+}
+
+.articulo05 {
+  grid-area: art05;
+}
+
+.articulo06 {
+  grid-area: art06;
+}
+
+.articulo07 {
+  grid-area: art07;
+}
+
+.articulo08 {
+  grid-area: art08;
+}
+
+.subtitulo {
+  grid-area: subtitulo;
+  font-size: 4em;
+  font-family: estiloJapo;
+  color: #E8630A;
+  text-shadow: 1px 1px 0.05em #333;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.masVendidos {
+  background-color: #FEFBE7;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr;
+  grid-template-areas: "subtitulo subtitulo subtitulo subtitulo" "art01 art02 art03 art04" "art05 art06 art07 art08";
+  justify-items: center;
+  align-items: center;
+  padding: 2vw 0;
+}
+
+.masVendidos article {
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  height: 85%;
+  overflow: hidden;
+  font-family: 'Comic Neue';
+  font-size: 1vw;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition-duration: 0.3s;
+}
+
+.masVendidos article:hover .recuadroVenta {
+  transform: translateY(-100%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.botonComprar {
+  background-color: #E8630A;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.5em;
+  font-family: 'Comic Neue';
+  color: #fff;
+}
+
+.botonComprar:hover {
+  background-color: #ab4a0a;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.imagenesArticulos {
+  width: 100%;
+  height: 100%;
+}
+
+.recuadroVenta {
+  background-color: #fff;
+  height: 30%;
+  font-size: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: .5s;
+}
+
+/**     LANZAMIENTOS RECIENTES      **/
+.lanzamientosRecientes {
+  background-color: #FEFBE7;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr;
+  grid-template-areas: "subtitulo subtitulo subtitulo subtitulo" "art01 art02 art03 art04" "art05 art06 art07 art08";
+  justify-items: center;
+  align-items: center;
+  row-gap: 10px;
+  padding-bottom: 20px;
+}
+
+.lanzamientosRecientes article {
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  height: 85%;
+  overflow: hidden;
+  font-family: 'Comic Neue';
+  font-size: 1vw;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition-duration: 0.3s;
+}
+
+.lanzamientosRecientes article:hover .recuadroVenta {
+  transform: translateY(-100%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/**     FOOTER      **/
+footer {
+  background-color: #E8630A;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23b8500a' fill-opacity='0.32' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  font-family: estiloJapo;
+  font-size: 1.5vw;
+  color: #fff;
+  text-shadow: 1 1 0px black;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 5fr 0.5fr;
+  grid-template-areas: "redes pago direccion" "derechos derechos derechos";
+  justify-items: center;
+  align-items: center;
+  row-gap: 1vw;
+}
+
+.info .redesSociales {
+  grid-area: redes;
+}
+
+.subtitulosFooter {
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.mediosDePago {
+  grid-area: pago;
+}
+
+.direccion {
+  grid-area: direccion;
+}
+
+.direccion p {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.derechos {
+  grid-area: derechos;
+}
+
+.derechos h6 {
+  font-size: 1em;
+  text-align: center;
+}
+
+.seccionesDeFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.imagenesFooter {
+  width: 50px;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.imagenesFooter:hover {
+  transform: rotate(360deg);
+  transition-duration: 0.8s;
+  cursor: pointer;
+}
+
+/*****          FORM DE CONTACTO            ****/
+.sectionForm {
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/rengoku.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sectionForm form {
+  width: 40%;
+  color: #fff;
+  padding: 1em 0;
+}
+
+.cuadroFormulario {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 60%;
+  border-radius: 10px;
+}
+
+.mapa {
+  width: 40%;
+  height: 60%;
+}
+
+.mapa iframe {
+  border-radius: 10px;
+}
+
+.cuadrosDeInformacion {
+  padding: 0.7vw;
+  margin-bottom: 0.5vw;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Comic Neue';
+  resize: none;
+}
+
+.cuadroFormulario textarea {
+  padding-bottom: 4vw;
+}
+
+.botonEnviar {
+  width: 100%;
+  background-color: #E8630A;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Comic Neue';
+  padding: 0.7vw 0;
+  font-size: 1vw;
+}
+
+.botonEnviar:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+/*****      SOBRE NOSOTROS      *****/
+.nosotros {
+  background-image: url(../img/fondo-goku.jpg);
+  background-position: center;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nosotros div p {
+  font-family: estiloJapo;
+  font-size: 2.2em;
+  padding: 1em 0;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+/*****      MERCHANDISING       *****/
+.aside-mercha {
+  grid-area: aside;
+}
+
+.articulo09 {
+  grid-area: art09;
+}
+
+.articulo10 {
+  grid-area: art10;
+}
+
+.articulo11 {
+  grid-area: art11;
+}
+
+.articulo12 {
+  grid-area: art12;
+}
+
+.articulo13 {
+  grid-area: art13;
+}
+
+.articulo14 {
+  grid-area: art14;
+}
+
+.articulo15 {
+  grid-area: art15;
+}
+
+.articulo16 {
+  grid-area: art16;
+}
+
+.mercha-grid {
+  display: grid;
+  grid-template-columns: 0.5fr 0.7fr 0.7fr 0.7fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "aside art09 art10 art11" "aside art12 art13 art14" ". art15 art16 .";
+  justify-items: center;
+  align-items: center;
+  padding: 2em 0;
+  gap: 1em;
+  background-color: #FEFBE7;
+}
+
+.mercha-grid article {
+  width: 100%;
+  height: 100%;
+  font-family: 'Comic Neue';
+  font-size: 1vw;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+
+.mercha-grid article:hover .recuadroVenta {
+  transform: translateY(-100%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.imagenesMercha {
+  width: 100%;
+  height: 100%;
+}
+
+.aside-mercha {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  font-family: 'Comic Neue';
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #E8630A;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23b8500a' fill-opacity='0.32' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.aside-mercha h3 {
+  font-weight: 500;
+  font-size: 2em;
+  text-align: center;
+}
+
+.aside-mercha a {
+  font-size: 1.5em;
+}
+
+.aside-mercha ul {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5px;
+}
+
+/*****      MANGAS      *****/
+.mangas-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "manga01 manga02 manga03 manga04" "manga05 manga06 manga07 manga08" "manga09 manga10 manga11 manga12" "manga13 manga14 manga15 manga16";
+  margin: 2vw;
+  justify-content: center;
+  justify-items: center;
+}
+
+.mangas-grid article {
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  height: 85%;
+  overflow: hidden;
+  font-family: 'Comic Neue';
+  font-size: 1vw;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition-duration: 0.3s;
+}
+
+.mangas-grid article:hover .recuadroVenta {
+  transform: translateY(-100%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.manga01 {
+  grid-area: manga01;
+}
+
+.manga02 {
+  grid-area: manga02;
+}
+
+.manga03 {
+  grid-area: manga03;
+}
+
+.manga04 {
+  grid-area: manga04;
+}
+
+.manga05 {
+  grid-area: manga05;
+}
+
+.manga06 {
+  grid-area: manga06;
+}
+
+.manga07 {
+  grid-area: manga07;
+}
+
+.manga08 {
+  grid-area: manga08;
+}
+
+.manga09 {
+  grid-area: manga09;
+}
+
+.manga10 {
+  grid-area: manga10;
+}
+
+.manga11 {
+  grid-area: manga11;
+}
+
+.manga12 {
+  grid-area: manga12;
+}
+
+.manga13 {
+  grid-area: manga13;
+}
+
+.manga14 {
+  grid-area: manga14;
+}
+
+.manga15 {
+  grid-area: manga15;
+}
+
+.manga16 {
+  grid-area: manga16;
+}
+
+/*****      RESPONSIVE      *****/
+/* Tablets en horizonal y escritorios normales*/
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* header */
+  .titulo-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+  }
+  .titulo h1 {
+    font-size: 5vw;
+  }
+  .titulo h2 {
+    padding: 0;
+    font-size: 3.5vw;
+  }
+  .navbar li a {
+    font-size: 1.7vw;
+  }
+  /* banner */
+  .banner {
+    background-image: url(../img/rengoku.png);
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    height: 30vw;
+  }
+  /* buscador */
+  .barraBusqueda {
+    height: 85%;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+  /*mas vendidos*/
+  .masVendidos {
+    background-color: #FEFBE7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    grid-template-areas: "subtitulo subtitulo subtitulo" "art01 art02 art03" "art04 art05 art06" "art07 art08 . ";
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .masVendidos article {
+    border-radius: 10px;
+    text-align: center;
+    width: 70%;
+    height: 90%;
+    overflow: hidden;
+    font-family: 'Comic Neue';
+    font-size: 1vw;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition-duration: 0.3s;
+  }
+  .recuadroVenta {
+    font-size: 2vw;
+  }
+  .botonComprar {
+    font-size: 2vw;
+  }
+  .lanzamientosRecientes {
+    background-color: #FEFBE7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    grid-template-areas: "subtitulo subtitulo subtitulo" "art01 art02 art03"  "art04 art05 art06" "art07 art08 .";
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    padding-bottom: 20px;
+  }
+  .imagenesFooter {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  /* contacto */
+  /* mangas */
+  .mangas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "manga01 manga02 manga03" "manga04 manga05 manga06" "manga07 manga08 manga09" "manga10 manga11 manga12" "manga13 manga14 manga15" "manga16 . .";
+    margin: 2vw;
+    justify-content: center;
+    justify-items: center;
+  }
+  /* contacto */
+  .botonEnviar {
+    font-size: 1.3vw;
+  }
+  /* merchandising */
+  .mercha-grid {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.7fr 0.7fr 0.7fr;
+    grid-template-areas: "buscador buscador buscador buscador" "aside art09 art10 art11" "aside art12 art13 art14" ".  art15 art16 .";
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    padding: 2em 2em;
+    background-color: #FEFBE7;
+  }
+  .mercha-grid article {
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition-duration: 0.3s;
+    overflow: hidden;
+  }
+  .mercha-grid article .recuadroVenta {
+    font-size: 1.4vw;
+    height: 35%;
+  }
+  .mercha-grid article .recuadroVenta .botonComprar {
+    font-size: 1.2vw;
+  }
+  .aside-mercha h3 {
+    font-weight: 500;
+    font-size: 2vw;
+    text-align: center;
+  }
+  .aside-mercha a {
+    font-size: 1.5vw;
+  }
+}
+
+/* Celulares en horizontal o tablets en vertical*/
+@media (max-width: 767px) {
+  /* header */
+  .navbar li a {
+    font-size: 3vw;
+  }
+  /* banner */
+  /* mas vendidos*/
+  .masVendidos article {
+    width: 70%;
+    height: 90%;
+    overflow: hidden;
+  }
+  .masVendidos article h3 {
+    font-size: 2vw;
+  }
+  .masVendidos {
+    background-color: #FEFBE7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.15fr 1fr 1fr 1fr;
+    grid-template-areas: "subtitulo subtitulo" "art01 art02" "art03 art04" "art05 art06"  "art07 art08";
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    padding-bottom: 20px;
+  }
+  .recuadroVenta {
+    font-size: 2vw;
+  }
+  .botonComprar {
+    font-size: 2vw;
+  }
+  /* lanzamientos recientes*/
+  .lanzamientosRecientes {
+    background-color: #FEFBE7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.15fr 1fr 1fr 1fr;
+    grid-template-areas: "subtitulo subtitulo" "art01 art02"  "art03 art04"  "art05 art06" "art07 art08";
+  }
+  /* footer */
+  /* mangas */
+  .mangas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "manga01 manga02"  "manga03 manga04"  "manga05 manga06" "manga07 manga08"  "manga09 manga10" "manga11 manga12" "manga13 manga14"  "manga15 manga16";
+    margin: 2vw;
+    justify-content: center;
+    justify-items: center;
+  }
+  /* sobre nosotros*/
+  .nosotros p {
+    padding: 0 10%;
+    font-family: estiloJapo;
+    font-size: 3vw;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+  /* contacto */
+  /* merchandising */
+  .mercha-grid {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "buscador buscador buscador" "aside art09 art10" "aside art11 art12" ". art13 art14 " ".   art15 art16";
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    padding: 1vw 1vw;
+    background-color: #FEFBE7;
+  }
+  .mercha-grid article .recuadroVenta {
+    font-size: 2.5vw;
+    height: 35%;
+  }
+  .mercha-grid article .recuadroVenta .botonComprar {
+    font-size: 2vw;
+    padding: 1vw;
+  }
+  .aside-mercha {
+    position: sticky;
+    top: 1vw;
+  }
+  .aside-mercha h3 {
+    font-weight: 500;
+    font-size: 3.2vw;
+    text-align: center;
+  }
+  .aside-mercha a {
+    font-size: 2.5vw;
+  }
+}
+
+/* bootrsap media query*/
+@media (max-width: 1200px) {
+  .masVendidos {
+    background-color: #FEFBE7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.15fr 1fr 1fr 1fr;
+    grid-template-areas: "subtitulo subtitulo" "art01 art02" "art03 art04" "art05 art06"  "art07 art08";
+  }
+  .masVendidos article {
+    width: 90%;
+    height: 85%;
+  }
+  .lanzamientosRecientes {
+    background-color: #FEFBE7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.15fr 1fr 1fr 1fr;
+    grid-template-areas: "subtitulo subtitulo" "art01 art02"  "art03 art04"  "art05 art06" "art07 art08";
+  }
+}
+
+@media (max-width: 768px) {
+  .info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "redes"  "pago" "direccion" "derechos";
+  }
+  .subtitulosFooter {
+    font-size: 3em;
+  }
+  .seccionesDeFooter p {
+    font-size: 2.45em;
+  }
+  .derechos h6 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 1399px) and (min-width: 768px) {
+  footer {
+    font-size: 1.5vw;
+  }
+  .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4fr 0.5fr;
+    grid-template-areas: "redes pago direccion" "derechos derechos derechos";
+  }
+  .subtitulosFooter {
+    font-size: 1.5em;
+  }
+  .seccionesDeFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagenesFooter {
+    width: 35px;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  .direccion p {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .imagenesFooter:hover {
+    transform: rotate(360deg);
+    transition-duration: 0.8s;
+    cursor: pointer;
+  }
+  .derechos h6 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .titulo-grid {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+/* Celulares en vertical */
+@media (max-width: 480px) {
+  /* header */
+  .navbar li a {
+    font-size: 5vw;
+  }
+  /* banner */
+  /* mas vendidos*/
+  .masVendidos article {
+    width: 70%;
+    height: 90%;
+    overflow: hidden;
+  }
+  .masVendidos article h3 {
+    font-size: 5vw;
+  }
+  .subtitulo {
+    font-size: 10vw;
+    padding-top: 3vw;
+  }
+  .masVendidos {
+    background-color: #FEFBE7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "subtitulo" "art01"  "art02" "art03"  "art04" "art05"  "art06"  "art07"  "art08";
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    padding-bottom: 20px;
+  }
+  .recuadroVenta {
+    font-size: 4vw;
+  }
+  .botonComprar {
+    font-size: 4vw;
+  }
+  /* lanzamientos recientes*/
+  .lanzamientosRecientes {
+    background-color: #FEFBE7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "subtitulo" "art01" "art02"  "art03"  "art04"  "art05"  "art06" "art07"  "art08";
+  }
+  .lanzamientosRecientes .subtitulo {
+    text-align: center;
+    font-size: 10vw;
+  }
+  /* footer */
+  /* mangas */
+  .mangas-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-areas: "manga01" "manga02"  "manga03" "manga04"  "manga05" "manga06" "manga07" "manga08"  "manga09" "manga10" "manga11" "manga12" "manga13" "manga14"  "manga15" "manga16";
+    margin: 2vw;
+    justify-content: center;
+    justify-items: center;
+  }
+  /* merchandising */
+  .mercha-grid {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 1fr;
+    grid-template-rows: 0.1fr repeat(4, 1fr);
+    grid-template-areas: "buscador buscador buscador" "aside art09 art10" "aside art11 art12" ". art13 art14 " ". art15 art16";
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0.8vw 0.8vw;
+    background-color: #FEFBE7;
+  }
+  .mercha-grid article .recuadroVenta {
+    font-size: 3.5vw;
+    height: 35%;
+  }
+  .mercha-grid article .recuadroVenta .botonComprar {
+    font-size: 3vw;
+    padding: 1vw;
+  }
+  .aside-mercha {
+    position: sticky;
+    top: 1vw;
+  }
+  .aside-mercha h3 {
+    font-weight: 500;
+    font-size: 4vw;
+    text-align: center;
+  }
+  .aside-mercha a {
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mercha-grid {
+    display: grid;
+    grid-template-columns: 0.5fr 0.7fr 0.7fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "aside art09 art10" "aside art11 art12" ". art13 art14" ". art15 art16";
+  }
+  .mapa {
+    display: none;
+  }
+  .sectionForm form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px) {
+  .mercha-grid {
+    display: grid;
+    grid-template-columns: 0.5fr 0.7fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "aside art09" "aside art10" ". art11" ". art12" ". art13" ". art14" ". art15" ". art16";
+  }
+  .aside-mercha {
+    position: sticky;
+    top: 1vw;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

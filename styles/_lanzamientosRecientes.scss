@@ -1,0 +1,30 @@
+.lanzamientosRecientes{
+    background-color: #FEFBE7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  0.3fr 1fr 1fr;
+    grid-template-areas: 
+    "subtitulo subtitulo subtitulo subtitulo"
+    "art01 art02 art03 art04"
+    "art05 art06 art07 art08";
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    padding-bottom: 20px;
+    article{
+        border-radius: 10px;
+        text-align: center;
+        width: 90%;
+        height: 85%;
+        overflow: hidden;
+        font-family: 'Comic Neue';
+        font-size: 1vw;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        transition-duration: 0.3s;
+        &:hover .recuadroVenta{
+            transform: $aparecer;
+            box-shadow: $sombra-articulo;
+        }
+    }
+}

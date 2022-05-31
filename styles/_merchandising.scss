@@ -1,0 +1,103 @@
+.aside-mercha{
+    grid-area: aside;
+}
+
+.articulo09{
+    grid-area: art09;
+}
+
+.articulo10{
+    grid-area: art10;
+}
+
+.articulo11{
+    grid-area: art11;
+}
+
+.articulo12{
+    grid-area: art12;
+}
+
+.articulo13{
+    grid-area: art13;
+}
+
+.articulo14{
+    grid-area: art14;
+}
+
+.articulo15{
+    grid-area: art15;
+}
+
+.articulo16{
+    grid-area: art16;
+}
+.mercha-grid{
+    display: grid;
+    grid-template-columns: 0.5fr 0.7fr 0.7fr 0.7fr;
+    grid-template-rows:  1fr 1fr 1fr;
+    grid-template-areas:
+    "aside art09 art10 art11"
+    "aside art12 art13 art14"
+    ". art15 art16 .";
+    justify-items: center;
+    align-items: center;
+    padding: 2em 0;
+    gap: 1em;
+    background-color: #FEFBE7;
+    article{
+        width: 100%;
+        height: 100%;
+        font-family: 'Comic Neue';
+        font-size: 1vw;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        transition-duration: 0.3s;
+        overflow: hidden;
+        &:hover .recuadroVenta{
+            transform: $aparecer;
+            box-shadow: $sombra-articulo;
+        }
+    }
+}
+
+.imagenesMercha{
+    width: 100%;
+    height: 100%;
+}
+
+.aside-mercha{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    font-family: 'Comic Neue';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $naranja-manga;
+    background-image: $panal;
+    h3{
+        font-weight: 500;
+        font-size: 2em;
+        text-align: center;
+    }
+    a{
+        font-size: 1.5em;
+    }
+    ul{
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 5px;
+    }
+}

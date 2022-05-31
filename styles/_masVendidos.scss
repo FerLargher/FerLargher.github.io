@@ -1,0 +1,103 @@
+.articulo01{
+    grid-area: art01;
+}
+
+.articulo02{
+    grid-area: art02;
+}
+
+.articulo03{
+    grid-area: art03;
+}
+
+.articulo04{
+    grid-area: art04;
+}
+
+.articulo05{
+    grid-area: art05;
+}
+
+.articulo06{
+    grid-area: art06;
+}
+
+.articulo07{
+    grid-area: art07;
+}
+
+.articulo08{
+    grid-area: art08;
+}
+
+.subtitulo{
+    grid-area: subtitulo;
+    font-size: 4em;
+    font-family: estiloJapo;
+    color: $naranja-manga;
+    text-shadow: 1px 1px 0.05em #333;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.masVendidos{
+    background-color: #FEFBE7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  0.1fr 1fr 1fr;
+    grid-template-areas: 
+    "subtitulo subtitulo subtitulo subtitulo"
+    "art01 art02 art03 art04"
+    "art05 art06 art07 art08";
+    justify-items: center;
+    align-items: center;
+    padding: 2vw 0;
+    article{
+        border-radius: 10px;
+        text-align: center;
+        width: 90%;
+        height: 85%;
+        overflow: hidden;
+        font-family: 'Comic Neue';
+        font-size: 1vw;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        transition-duration: 0.3s;
+        &:hover .recuadroVenta{
+            transform: $aparecer;
+            box-shadow: $sombra-articulo;
+        }
+    }
+}
+
+.botonComprar {
+    background-color: $naranja-manga;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.5em;
+    font-family: 'Comic Neue';
+    color: #fff;
+    &:hover{
+        background-color: #ab4a0a;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.imagenesArticulos{
+    width: 100%;
+    height: 100%;
+}
+
+.recuadroVenta{
+    background-color: #fff;
+    height: 30%;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: .5s;
+}

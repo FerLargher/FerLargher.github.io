@@ -1,0 +1,60 @@
+.sectionForm{
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/rengoku.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    form{
+        width: 40%;
+        color: #fff;
+        padding: 1em 0;
+    }
+}
+
+
+.cuadroFormulario{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.mapa{
+    width: 40%;
+    height: 60%;
+    iframe{
+        border-radius: 10px;
+    }
+}
+
+.cuadrosDeInformacion{
+    padding: 0.7vw;
+    margin-bottom: 0.5vw;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Comic Neue';
+    resize: none;
+}
+.cuadroFormulario textarea{
+    padding-bottom: 4vw;
+}
+
+.botonEnviar{
+    width: 100%;
+    background-color: $naranja-manga;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Comic Neue';
+    padding: 0.7vw 0;
+    font-size: 1vw;
+    &:hover{
+        cursor: pointer;
+        color: orange;
+    }
+}

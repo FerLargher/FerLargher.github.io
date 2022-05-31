@@ -1,0 +1,691 @@
+@import "variables";
+@import "reset";
+
+/*********  FUENTE   *********/
+@font-face {
+    font-family: estiloJapo;
+    src: url(../fuentes/HIROMISAKE.ttf);
+}
+body{
+    background-color: #FEFBE7;
+}
+
+/********* HEADER *********/
+
+@import "header";
+
+/**     BANNER      **/
+.banner{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/**     BUSCADOR    **/
+
+@import "buscador";
+
+/**     MAS VENDIDOS    **/
+
+@import "masVendidos";
+
+/**     LANZAMIENTOS RECIENTES      **/
+
+@import "lanzamientosRecientes";
+
+
+/**     FOOTER      **/
+@import "footer";
+
+/*****          FORM DE CONTACTO            ****/
+
+@import "contacto";
+
+/*****      SOBRE NOSOTROS      *****/
+
+@import "sobreNosotros";
+
+/*****      MERCHANDISING       *****/
+
+@import "merchandising";
+
+/*****      MANGAS      *****/
+
+@import "mangas";
+
+/*****      RESPONSIVE      *****/
+
+/* Tablets en horizonal y escritorios normales*/
+
+@media (min-width: 768px) and (max-width: 1199px){
+    /* header */
+    .titulo-grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        padding-left: 1em;
+    }
+    .titulo h1{
+        font-size: 5vw;
+    }
+    .titulo h2{
+        padding: 0;
+        font-size: 3.5vw;
+    }
+    .navbar li a{
+        font-size: 1.7vw;
+    }
+    /* banner */
+    .banner{
+        background-image: url(../img/rengoku.png);
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+        height: 30vw;
+    }
+
+    /* buscador */
+
+
+    
+    .barraBusqueda{
+        height: 85%;
+        width: 50%;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+    }
+    
+
+    /*mas vendidos*/
+    .masVendidos{
+        background-color: #FEFBE7;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:  0.2fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "subtitulo subtitulo subtitulo"
+        "art01 art02 art03"
+        "art04 art05 art06"
+        "art07 art08 . ";
+        justify-items: center;
+        align-items: center;
+        row-gap: 10px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .masVendidos article{
+        border-radius: 10px;
+        text-align: center;
+        width: 70%;
+        height: 90%;
+        overflow: hidden;
+        font-family: 'Comic Neue';
+        font-size: 1vw;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        transition-duration: 0.3s;
+    }
+
+    .recuadroVenta{
+        font-size: 2vw;
+    }
+
+    .botonComprar {
+        font-size: 2vw;
+    }
+
+    .lanzamientosRecientes{
+        background-color: #FEFBE7;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:  0.2fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "subtitulo subtitulo subtitulo"
+        "art01 art02 art03" 
+        "art04 art05 art06"
+        "art07 art08 .";
+        justify-items: center;
+        align-items: center;
+        row-gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .imagenesFooter{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        transition-duration: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    /* contacto */
+    
+
+    /* mangas */
+    .mangas-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "manga01 manga02 manga03"
+        "manga04 manga05 manga06"
+        "manga07 manga08 manga09"
+        "manga10 manga11 manga12"
+        "manga13 manga14 manga15"
+        "manga16 . .";
+        margin: 2vw;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    /* contacto */
+    
+    
+    
+    .botonEnviar{
+        font-size: 1.3vw;
+    }
+    /* merchandising */
+    .mercha-grid{
+        display: grid;
+        grid-template-columns: 0.7fr 1fr 1fr 1fr;
+        grid-template-rows:  0.1fr 0.7fr 0.7fr 0.7fr;
+        grid-template-areas:
+        "buscador buscador buscador buscador"
+        "aside art09 art10 art11"
+        "aside art12 art13 art14"
+        ".  art15 art16 .";
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
+        padding: 2em 2em;
+        background-color: #FEFBE7;
+    }
+    .mercha-grid article{
+        width: 100%;
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        transition-duration: 0.3s;
+        overflow: hidden;
+    }
+    
+    .mercha-grid article .recuadroVenta{
+        font-size: 1.4vw;
+        height: 35%;
+    }
+
+    .mercha-grid article .recuadroVenta .botonComprar{
+        font-size: 1.2vw;
+    }
+    
+    .aside-mercha h3{
+        font-weight: 500;
+        font-size: 2vw;
+        text-align: center;
+    }
+    
+    .aside-mercha a{
+        font-size: 1.5vw;
+    }
+}
+/* Celulares en horizontal o tablets en vertical*/
+
+@media (max-width: 767px) {
+    /* header */
+    .navbar li a{
+        font-size: 3vw;
+    }
+
+    /* banner */
+
+
+    /* mas vendidos*/
+    .masVendidos article{
+        width: 70%;
+        height: 90%;
+        overflow: hidden;
+    }
+    .masVendidos article h3{
+        font-size: 2vw;
+    }
+    
+    .masVendidos{
+        background-color: #FEFBE7;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  0.15fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "subtitulo subtitulo"
+        "art01 art02"
+        "art03 art04"
+        "art05 art06" 
+        "art07 art08";
+        justify-items: center;
+        align-items: center;
+        row-gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .recuadroVenta{
+        font-size: 2vw;
+    }
+
+    .botonComprar {
+        font-size: 2vw;
+    }
+
+    /* lanzamientos recientes*/
+
+    .lanzamientosRecientes{
+        background-color: #FEFBE7;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  0.15fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "subtitulo subtitulo"
+        "art01 art02" 
+        "art03 art04" 
+        "art05 art06"
+        "art07 art08";
+    }
+
+    /* footer */
+    
+
+
+     /* mangas */
+     .mangas-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "manga01 manga02" 
+        "manga03 manga04" 
+        "manga05 manga06"
+        "manga07 manga08" 
+        "manga09 manga10"
+        "manga11 manga12"
+        "manga13 manga14" 
+        "manga15 manga16";
+        margin: 2vw;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    /* sobre nosotros*/
+    .nosotros p{
+        padding: 0 10%;
+        font-family: estiloJapo;
+        font-size: 3vw;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+        
+    /* contacto */
+    
+    
+    /* merchandising */
+    .mercha-grid{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr;
+        grid-template-rows:  0.1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "buscador buscador buscador"
+        "aside art09 art10"
+        "aside art11 art12"
+        ". art13 art14 "
+        ".   art15 art16";
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
+        padding: 1vw 1vw;
+        background-color: #FEFBE7;
+    }
+    
+    .mercha-grid article .recuadroVenta{
+        font-size: 2.5vw;
+        height: 35%;
+    }
+
+    .mercha-grid article .recuadroVenta .botonComprar{
+        font-size: 2vw;
+        padding: 1vw;
+    }
+
+    .aside-mercha{
+        position: sticky;
+        top: 1vw;
+    }
+    
+    .aside-mercha h3{
+        font-weight: 500;
+        font-size: 3.2vw;
+        text-align: center;
+    }
+    
+    .aside-mercha a{
+        font-size: 2.5vw;
+    }
+}
+
+/* bootrsap media query*/
+
+@media (max-width: 1200px){
+    
+    .masVendidos{
+        background-color: #FEFBE7;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  0.15fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "subtitulo subtitulo"
+        "art01 art02"
+        "art03 art04"
+        "art05 art06" 
+        "art07 art08";
+    }
+    .masVendidos article{
+        width: 90%;
+        height: 85%;
+    }
+
+    .lanzamientosRecientes{
+        background-color: #FEFBE7;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  0.15fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "subtitulo subtitulo"
+        "art01 art02" 
+        "art03 art04" 
+        "art05 art06"
+        "art07 art08";
+    }
+}
+
+@media (max-width: 768px){
+    .info{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+        grid-template-areas: 
+        "redes" 
+        "pago"
+        "direccion"
+        "derechos";
+    }
+    .subtitulosFooter{
+        font-size: 3em;
+    }
+    .seccionesDeFooter p{
+        font-size: 2.45em;
+    }
+    .derechos h6{
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 1399px) and (min-width: 768px){
+    footer{
+        font-size: 1.5vw;
+    }
+    
+    .info{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 4fr 0.5fr;
+        grid-template-areas: 
+        "redes pago direccion"
+        "derechos derechos derechos";
+    }
+    
+    .subtitulosFooter{
+        font-size: 1.5em;
+    }
+    
+    .seccionesDeFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imagenesFooter{
+        width: 35px;
+        border-radius: 50%;
+        transition-duration: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+    
+    .direccion p{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    
+    .imagenesFooter:hover{
+        transform: rotate(360deg);
+        transition-duration: 0.8s;
+        cursor: pointer;
+    }
+    
+    .derechos h6{
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+@media (max-width: 991px){
+    .titulo-grid{
+        display: none;
+    }
+}
+@media(min-width: 992px){
+    .navbar-brand{
+        display: none;
+    }
+}
+
+/* Celulares en vertical */
+
+@media (max-width: 480px) {
+    /* header */
+
+    .navbar li a{
+        font-size: 5vw;
+    }
+    
+    /* banner */
+
+
+
+    /* mas vendidos*/
+    .masVendidos article{
+        width: 70%;
+        height: 90%;
+        overflow: hidden;
+    }
+    .masVendidos article h3{
+        font-size: 5vw;
+    }
+    
+    .subtitulo{
+        font-size: 10vw;
+        padding-top: 3vw;
+    }
+
+    .masVendidos{
+        background-color: #FEFBE7;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "subtitulo"
+        "art01" 
+        "art02"
+        "art03" 
+        "art04"
+        "art05" 
+        "art06" 
+        "art07" 
+        "art08";
+        justify-items: center;
+        align-items: center;
+        row-gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .recuadroVenta{
+        font-size: 4vw;
+    }
+
+    .botonComprar {
+        font-size: 4vw;
+    }
+
+    /* lanzamientos recientes*/
+
+    .lanzamientosRecientes{
+        background-color: #FEFBE7;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "subtitulo"
+        "art01"
+        "art02" 
+        "art03" 
+        "art04" 
+        "art05" 
+        "art06"
+        "art07" 
+        "art08";
+    }
+
+    .lanzamientosRecientes .subtitulo{
+        text-align: center;
+        font-size: 10vw;
+    }
+
+    /* footer */
+
+    
+    /* mangas */
+    .mangas-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(16, 1fr);
+        grid-template-areas: 
+        "manga01"
+        "manga02" 
+        "manga03"
+        "manga04" 
+        "manga05"
+        "manga06"
+        "manga07"
+        "manga08" 
+        "manga09"
+        "manga10"
+        "manga11"
+        "manga12"
+        "manga13"
+        "manga14" 
+        "manga15"
+        "manga16";
+        margin: 2vw;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    /* merchandising */
+    .mercha-grid{
+        display: grid;
+        grid-template-columns: 0.7fr 1fr 1fr;
+        grid-template-rows:  0.1fr repeat(4, 1fr);
+        grid-template-areas:
+        "buscador buscador buscador"
+        "aside art09 art10"
+        "aside art11 art12"
+        ". art13 art14 "
+        ". art15 art16";
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
+        padding: 0.8vw 0.8vw;
+        background-color: #FEFBE7;
+    }
+    
+    .mercha-grid article .recuadroVenta{
+        font-size: 3.5vw;
+        height: 35%;
+    }
+
+    .mercha-grid article .recuadroVenta .botonComprar{
+        font-size: 3vw;
+        padding: 1vw;
+    }
+
+    .aside-mercha{
+        position: sticky;
+        top: 1vw;
+    }
+    
+    .aside-mercha h3{
+        font-weight: 500;
+        font-size: 4vw;
+        text-align: center;
+    }
+    
+    .aside-mercha a{
+        font-size: 3.5vw;
+    }
+
+}
+
+@media (max-width: 1200px){
+    .mercha-grid{
+        display: grid;
+        grid-template-columns: 0.5fr 0.7fr 0.7fr;
+        grid-template-rows:  1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "aside art09 art10"
+        "aside art11 art12"
+        ". art13 art14"
+        ". art15 art16";
+    }
+    .mapa{
+        display: none;
+    }
+
+    .sectionForm form{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 992px){
+    .mercha-grid{
+        display: grid;
+        grid-template-columns: 0.5fr 0.7fr;
+        grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "aside art09"
+        "aside art10"
+        ". art11"
+        ". art12"
+        ". art13"
+        ". art14"
+        ". art15"
+        ". art16";
+    }
+    .aside-mercha{
+        position: sticky;
+        top: 1vw;
+    }
+}
