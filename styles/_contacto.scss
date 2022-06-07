@@ -45,14 +45,10 @@
 }
 
 .botonEnviar{
-    width: 100%;
-    background-color: $naranja-manga;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-family: 'Comic Neue';
+    @extend .botonComprar;
     padding: 0.7vw 0;
     font-size: 1vw;
+    width: 100%;
     &:hover{
         cursor: pointer;
         color: orange;

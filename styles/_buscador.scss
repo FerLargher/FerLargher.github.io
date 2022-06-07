@@ -1,6 +1,6 @@
 .buscador{
-    background-color: $naranja-manga;
-    background-image: $panal;
+    background-color: map-get($colores , "naranja" );
+    background-image: map-get($colores , "panal" );
     background-attachment: fixed;
 }
 

@@ -16,14 +16,18 @@ header{
 }
 
 .titulo{
+    @include flexible(flex, row, nowrap, center, baseline);
+}
+/*
+.titulo{
     display: flex;
     align-items: baseline;
     justify-content: center;
-}
+}*/
 
 header h1{
     font-size: 5em;
-    font-family: estiloJapo;
+    font-family: map-get($fuentes, "estiloJapo" );
     color: #E8630A;
     text-shadow: black 5px 1px 0.05em;
 }

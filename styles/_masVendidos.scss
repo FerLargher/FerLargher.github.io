@@ -34,7 +34,7 @@
     grid-area: subtitulo;
     font-size: 4em;
     font-family: estiloJapo;
-    color: $naranja-manga;
+    color: map-get($colores , "naranja");
     text-shadow: 1px 1px 0.05em #333;
     display: flex;
     align-items: center;
@@ -65,14 +65,14 @@
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         transition-duration: 0.3s;
         &:hover .recuadroVenta{
-            transform: $aparecer;
+            transform: map-get($animaciones , "aparecer" );
             box-shadow: $sombra-articulo;
         }
     }
 }
 
 .botonComprar {
-    background-color: $naranja-manga;
+    background-color: map-get($colores , "naranja");
     border-radius: 10px;
     border: none;
     font-size: 1.5em;

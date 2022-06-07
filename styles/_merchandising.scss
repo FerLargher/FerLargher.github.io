@@ -56,7 +56,7 @@
         transition-duration: 0.3s;
         overflow: hidden;
         &:hover .recuadroVenta{
-            transform: $aparecer;
+            transform: map-get($animaciones , "aparecer" );
             box-shadow: $sombra-articulo;
         }
     }
@@ -79,8 +79,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: $naranja-manga;
-    background-image: $panal;
+    background-color: map-get($colores, "naranja" );
+    background-image: map-get($colores, "panal" );
     h3{
         font-weight: 500;
         font-size: 2em;
