@@ -433,6 +433,7 @@ footer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 500px;
 }
 
 .sectionForm form {
@@ -490,6 +491,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 500px;
 }
 
 .nosotros div p {
