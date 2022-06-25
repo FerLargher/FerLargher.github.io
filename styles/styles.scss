@@ -465,13 +465,19 @@
     /* banner */
 
 
-
     /* mas vendidos*/
     .masVendidos article{
         width: 70%;
         height: 90%;
         overflow: hidden;
     }
+
+    .lanzamientosRecientes article{
+        width: 70%;
+        height: 90%;
+        overflow: hidden;
+    }
+    
     .masVendidos article h3{
         font-size: 5vw;
     }

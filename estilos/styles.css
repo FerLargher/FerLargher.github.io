@@ -133,12 +133,6 @@ header {
   align-items: baseline;
 }
 
-/*
-.titulo{
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-}*/
 header h1 {
   font-size: 5em;
   font-family: estiloJapo;
@@ -1038,6 +1032,11 @@ footer {
   /* banner */
   /* mas vendidos*/
   .masVendidos article {
+    width: 70%;
+    height: 90%;
+    overflow: hidden;
+  }
+  .lanzamientosRecientes article {
     width: 70%;
     height: 90%;
     overflow: hidden;
