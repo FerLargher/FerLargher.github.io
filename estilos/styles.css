@@ -970,6 +970,9 @@ footer {
   .derechos h6 {
     font-size: 3em;
   }
+  .imagenesFooter {
+    width: 40px;
+  }
 }
 
 @media (max-width: 1399px) and (min-width: 768px) {
@@ -1149,6 +1152,9 @@ footer {
   .aside-mercha {
     position: sticky;
     top: 1vw;
+  }
+  .nosotros div p {
+    font-size: 1.5em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
